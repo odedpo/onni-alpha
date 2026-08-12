@@ -103,6 +103,24 @@
 
   section{padding:76px 0}
   section[id]{scroll-margin-top:76px}
+
+  /* vision */
+  .vision-card{
+    background:var(--coral-softer); border:1px solid #EBCBC0; border-radius:28px;
+    padding:clamp(40px,5.4vw,64px) clamp(26px,5vw,64px);
+    position:relative; overflow:hidden;
+  }
+  .vision-card::after{
+    content:""; position:absolute; top:-140px; right:-120px; width:380px; height:380px;
+    background:radial-gradient(circle, rgba(250,138,114,.14), transparent 62%); pointer-events:none;
+  }
+  .statement{
+    font-size:clamp(21px,2.6vw,30px); font-weight:700; letter-spacing:-.018em;
+    line-height:1.4; color:var(--ink); max-width:900px; margin-top:20px;
+    position:relative;
+  }
+  .vision-sub{margin-top:22px; max-width:780px; color:var(--body); font-size:clamp(16px,1.5vw,17.5px); position:relative}
+  .vision-sub b{color:var(--ink)}
   .sec-head{max-width:720px; margin-bottom:40px}
   .rule{border:none; border-top:1px solid var(--line); margin:0}
 
@@ -247,6 +265,23 @@
     </div>
   </div>
 </header>
+
+<hr class="rule">
+
+<!-- VISION -->
+<section id="vision">
+  <div class="wrap">
+    <div class="vision-card rv">
+      <div class="kicker">the vision <span class="mid">·</span> in one breath</div>
+      <div class="statement">
+        People put real money and real intention into their supplements — then run the whole thing on memory, willpower and five checkout pages. We believe the managing should <span class="em">disappear</span> — so the only part left is the one that matters: <span class="em">feeling the difference.</span>
+      </div>
+      <p class="vision-sub">
+        We’re a small team backed by <b>significant funding from some of the world’s best investors</b>, building to fundamentally change how people manage and take their supplements. Cohort 01 is the first group in — <b>the routines this gets built around.</b>
+      </p>
+    </div>
+  </div>
+</section>
 
 <hr class="rule">
 
